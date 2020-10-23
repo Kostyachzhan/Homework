@@ -1,0 +1,14 @@
+C:\Users\Vanavan\source\repos\casino\casino\bin\Debug\casino.exe.config
+C:\Users\Vanavan\source\repos\casino\casino\bin\Debug\casino.exe
+C:\Users\Vanavan\source\repos\casino\casino\bin\Debug\casino.pdb
+C:\Users\Vanavan\source\repos\casino\casino\obj\Debug\casino.csprojAssemblyReference.cache
+C:\Users\Vanavan\source\repos\casino\casino\obj\Debug\casino.csproj.CoreCompileInputs.cache
+C:\Users\Vanavan\source\repos\casino\casino\obj\Debug\casino.exe
+C:\Users\Vanavan\source\repos\casino\casino\obj\Debug\casino.pdb
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\bin\Debug\casino.exe.config
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\bin\Debug\casino.exe
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\bin\Debug\casino.pdb
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\obj\Debug\casino.csprojAssemblyReference.cache
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\obj\Debug\casino.csproj.CoreCompileInputs.cache
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\obj\Debug\casino.exe
+C:\Users\Vanavan\Desktop\HW\casino_roulette\casino\obj\Debug\casino.pdb
