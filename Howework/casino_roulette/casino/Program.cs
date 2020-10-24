@@ -17,7 +17,7 @@ class MainClass
         {
             Console.WriteLine("input your bet: ");
             int bet = int.Parse(Console.ReadLine());
-            if (balance > bet)
+            if (balance >= bet)
             {
                 help();
                 switch (Console.ReadLine())
@@ -26,7 +26,7 @@ class MainClass
                         Console.WriteLine("Your current balance: " + spin_number(balance, bet));
                         break;
                     case "2":
-                        Console.WriteLine("Your current balance: " /*+ spin_color(balance, bet)*/);
+                        Console.WriteLine("Your current balance: " + spin_color(balance, bet));
                         break;
                     default:
                         Console.WriteLine("Input  1 or 2 ");
@@ -80,19 +80,17 @@ class MainClass
         return balance;
 
     }
-    ///Ставим на кокнкретный цвет
-    /*static double? spin_color(double balance, double betAmount)
+
+    static double? spin_color(double balance, double betAmount)
     {
         Random rnd = new Random();
 
-        string[] colors = { "Red", "Black", "Zero" };
-
-        Console.WriteLine("input color Red, Black or Zero: ");
+        Console.WriteLine("input color Red, Black or Zero (Input 0, 1 or 2): ");
         int color_bet = int.Parse(Console.ReadLine());
-        if (color_bet == int.Parse("Black") || color_bet == int.Parse("Red"))
+        if (color_bet == int.Parse("0") || color_bet == int.Parse("1"))
         {
-            int color_rand = rnd.Next(colors.Length);
-            Console.WriteLine("Roulette lands on" + color_rand);
+            int color_rand = rnd.Next(0, 3);
+            Console.WriteLine("Roulette lands on " + color_rand);
             if (color_rand == color_bet)
             {
                 balance += betAmount * 2;
@@ -100,14 +98,25 @@ class MainClass
             }
             else
             {
+                balance -= betAmount;
                 Console.WriteLine("You have lost.");
             }
         }
 
-        else if (color_bet == int.Parse("Zero"))
+        else if (color_bet == int.Parse("2"))
         {
-            balance += betAmount * 24;
-            Console.WriteLine("You win. Your bet x24 ");
+            int color_rand = rnd.Next(0, 3);
+            Console.WriteLine("Roulette lands on " + color_rand);
+            if (color_rand == color_bet)
+            {
+                balance += betAmount * 24;
+                Console.WriteLine("You win. Your bet x24 ");
+            }
+            else
+            {
+                balance -= betAmount;
+                Console.WriteLine("You have lost.");
+            }
         }
         else
         {
@@ -115,5 +124,5 @@ class MainClass
         }
 
         return balance;
-    }*/
+    }
 }
