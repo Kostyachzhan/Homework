@@ -8,13 +8,20 @@ namespace SecretString
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            SecString str = new SecString();
-            Console.WriteLine("Enter secret string: ");
-            str.Line = Console.ReadLine();
             Console.WriteLine("Enter password: ");
             string password = Console.ReadLine();
-            
-            str.CheckPass(password);
+            Console.WriteLine("Enter secret string: ");
+            string line = Console.ReadLine();
+            SecString str = new SecString(password, line);
+            Console.WriteLine(str.ReturnString(password));
+            string new_password = Console.ReadLine();
+            string new_line = Console.ReadLine();
+
+            str.PasswordChange(password, new_password);
+            Console.WriteLine(str.ReturnString(password));
+            Console.WriteLine(str.ReturnString(new_password));
+            str.StringChange(new_password, new_line);
+            Console.WriteLine(str.ReturnString(new_password));
 
             Console.ReadKey();
         }

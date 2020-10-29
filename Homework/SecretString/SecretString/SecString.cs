@@ -6,67 +6,48 @@ namespace SecretString.Check
 {
     class SecString
     {
-        public string password = "12345";
-        public string line;
-        public string Line 
+        private string password;
+        private string line;
+
+        public SecString(string password, string line )
         {
-            get { return line; }
-            set { line = value; } 
-        }
-
-        public void CheckPass(string pass)
-        {
-            if (pass == password)
-            {
-                Console.WriteLine("Password correct your line: " + line);
-                Console.WriteLine("What do you want Change Password or Secreat String(choose 1 or 2): ");
-                string ch = Console.ReadLine();
-                switch (ch) 
-                {
-                    case "1":
-                        PasswordChange(pass);
-                        break;
-                    case "2":
-                        StringChange(pass);
-                        break;
-                    default: Console.WriteLine("Wrong case!!!");
-                        break;
-
-                }
-            }
-            else
-            {
-                Console.WriteLine("Encorrect password!");
-            }
-
-        }
-
-        public void PasswordChange(string pass) 
+            this.password = password;
+            this.line = line;
+        } 
+        
+        public void PasswordChange(string pass, string new_pass) 
         {
             if (pass == password)
             {
-                Console.WriteLine("New password");
-                password = Console.ReadLine();
-                Console.WriteLine("Your new password: " + password);
+                password = new_pass;
             }
             else 
             {
-                Console.WriteLine("Encorrect password");
+                throw new Exception("Incorrect password") ;
             }
         }
 
-        public void StringChange(string pass) 
+        public void StringChange(string pass, string new_string) 
         {
             if (pass == password) 
             {
-                Console.WriteLine("Write new string: ");
-                Line = Console.ReadLine();
-                Console.WriteLine("Your new Secret string: " + line);
-                
+                line = new_string;
             }
             else 
             {
-                Console.WriteLine("error");
+                throw new Exception("Incorrect password");
+            }
+        }
+
+        public string ReturnString(string pass) 
+        {
+            if (pass == password)
+            {
+                return line;
+            }
+            else 
+            {
+                return null;
             }
         }
     }
