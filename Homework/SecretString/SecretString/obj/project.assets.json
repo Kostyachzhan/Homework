@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vanavan\\source\\repos\\SecretString\\SecretString\\SecretString.csproj",
+      "projectUniqueName": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\SecretString\\SecretString\\SecretString.csproj",
       "projectName": "SecretString",
-      "projectPath": "C:\\Users\\Vanavan\\source\\repos\\SecretString\\SecretString\\SecretString.csproj",
+      "projectPath": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\SecretString\\SecretString\\SecretString.csproj",
       "packagesPath": "C:\\Users\\Vanavan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vanavan\\source\\repos\\SecretString\\SecretString\\obj\\",
+      "outputPath": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\SecretString\\SecretString\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

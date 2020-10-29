@@ -7,17 +7,18 @@ namespace SecretString.Check
     class SecString
     {
         public string password = "12345";
+        public string line;
         public string Line 
         {
-            get;
-            set;  
+            get { return line; }
+            set { line = value; } 
         }
 
         public void CheckPass(string pass)
         {
             if (pass == password)
             {
-                Console.WriteLine("Password correct your line: " + Line);
+                Console.WriteLine("Password correct your line: " + line);
                 Console.WriteLine("What do you want Change Password or Secreat String(choose 1 or 2): ");
                 string ch = Console.ReadLine();
                 switch (ch) 
@@ -60,7 +61,7 @@ namespace SecretString.Check
             {
                 Console.WriteLine("Write new string: ");
                 Line = Console.ReadLine();
-                Console.WriteLine("Your new Secret string: " + Line);
+                Console.WriteLine("Your new Secret string: " + line);
                 
             }
             else 
