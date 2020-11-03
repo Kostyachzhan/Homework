@@ -1,0 +1,13 @@
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.exe
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.deps.json
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.runtimeconfig.json
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.runtimeconfig.dev.json
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.dll
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\bin\Debug\netcoreapp3.1\Animal_world.pdb
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.csprojAssemblyReference.cache
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.AssemblyInfoInputs.cache
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.AssemblyInfo.cs
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.csproj.CoreCompileInputs.cache
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.dll
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.pdb
+C:\Users\Vanavan\source\repos\Animal_world\Animal_world\obj\Debug\netcoreapp3.1\Animal_world.genruntimeconfig.cache
