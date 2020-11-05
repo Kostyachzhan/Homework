@@ -7,15 +7,22 @@ namespace Animal_world
     class Continent
     {
         Random rnd = new Random();
-        public int Food { get; set; }
+        public string Name { get; set; }
+        public double Food { get; set; }
 
-        public Continent(int food)
+        public Continent()
         {
+        }
+        public Continent(string continentName, int food)
+        {
+            this.Name = continentName;
             this.Food = food;
         }
         public void Display()
         {
-            Console.WriteLine($"Food={Food}");
+            Console.WriteLine($"Name of continent={Name}, Food={Food}");
         }
+
+        
     }
 }

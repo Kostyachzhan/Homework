@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vanavan\\source\\repos\\Animal_world\\Animal_world\\Animal_world.csproj": {}
+    "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\Animal_world\\Animal_world\\Animal_world.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vanavan\\source\\repos\\Animal_world\\Animal_world\\Animal_world.csproj": {
+    "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\Animal_world\\Animal_world\\Animal_world.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vanavan\\source\\repos\\Animal_world\\Animal_world\\Animal_world.csproj",
+        "projectUniqueName": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\Animal_world\\Animal_world\\Animal_world.csproj",
         "projectName": "Animal_world",
-        "projectPath": "C:\\Users\\Vanavan\\source\\repos\\Animal_world\\Animal_world\\Animal_world.csproj",
+        "projectPath": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\Animal_world\\Animal_world\\Animal_world.csproj",
         "packagesPath": "C:\\Users\\Vanavan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vanavan\\source\\repos\\Animal_world\\Animal_world\\obj\\",
+        "outputPath": "C:\\Users\\Vanavan\\Desktop\\HW\\Homework\\Animal_world\\Animal_world\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
