@@ -1,5 +1,4 @@
 ﻿using System;
-using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -17,6 +16,7 @@ namespace Animal_world
             this.Name = animalName;
             this.Species = species;
         }
+        public abstract void Remove(object obj);
         public abstract void Display();
 
 

@@ -12,7 +12,7 @@ namespace Animal_world
         List<Animal> a = new List<Animal>();
         Random rnd = new Random();
         Continent c = new Continent();
-        static double satiety=10;
+        ///static double satiety=10;
         public double HitPoints { get; set; }
         public double Satiety { get; set; }
         public double Defense { get; set; }
@@ -26,7 +26,7 @@ namespace Animal_world
             this.Satiety = satiety;
         }
 
-        public double Nutrition() 
+        /*public double Nutrition(ref double food ) 
         {
             if (satiety < 1)
             {
@@ -34,18 +34,35 @@ namespace Animal_world
                 Defense -= rnd.Next(0, 5);
             }   
         }
-        public void Repoduce(Animal a) 
+        public void Repoduce(ref double[] array) 
         {
             if(Satiety>150 && HitPoints > 150) 
             {
-                a.Add(new Harbivore);
+                array.Add();
             }
 
         }
 
+        public void delHarbivore(ref double[] array) 
+        {
+            for(int i = 0; i < array.Length; i++) 
+            {
+                if (HitPoints == 0)
+                {
+                    array.Remove();
+                }
+            }
+            
+        }*/
+
         public override void Display()
         {
-            Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Defense={Defense}" + " Nutrition: " + Nutrition());
+            Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Defense={Defense}" );
+        }
+
+        public override void Remove(object obj)
+        {
+            throw new NotImplementedException();
         }
     }
 }
