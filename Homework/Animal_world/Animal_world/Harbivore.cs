@@ -9,10 +9,9 @@ namespace Animal_world
     затем повышается сытость.Если сытость<1 - уменьшаем жизнь и защиту на рандомное маленькое число.*/
     class Harbivore : Animal
     {
-        List<Animal> a = new List<Animal>();
         Random rnd = new Random();
         Continent c = new Continent();
-        ///static double satiety=10;
+        static double satiety=10;
         public double HitPoints { get; set; }
         public double Satiety { get; set; }
         public double Defense { get; set; }
@@ -26,34 +25,15 @@ namespace Animal_world
             this.Satiety = satiety;
         }
 
-        /*public double Nutrition(ref double food ) 
+        public double nutritionHerb(ref double food ) 
         {
+            satiety += food;
             if (satiety < 1)
             {
                 HitPoints -= rnd.Next(0, 3);
                 Defense -= rnd.Next(0, 5);
-            }   
-        }
-        public void Repoduce(ref double[] array) 
-        {
-            if(Satiety>150 && HitPoints > 150) 
-            {
-                array.Add();
             }
-
         }
-
-        public void delHarbivore(ref double[] array) 
-        {
-            for(int i = 0; i < array.Length; i++) 
-            {
-                if (HitPoints == 0)
-                {
-                    array.Remove();
-                }
-            }
-            
-        }*/
 
         public override void Display()
         {

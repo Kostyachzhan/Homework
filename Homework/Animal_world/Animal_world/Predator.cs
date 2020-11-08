@@ -12,7 +12,7 @@ namespace Animal_world
     {
         Random rnd = new Random();
         Harbivore h = new Harbivore();
-        ///static double satiety = 10;
+        static double satiety = 10;
         public double HitPoints { get; set; }
         public double Satiety { get; set; }
         public double Attack { get; set; }
@@ -24,7 +24,7 @@ namespace Animal_world
             this.Attack = attack;
         }
 
-       /* public double Nutrition(ref Harbivore) 
+       /* public double nutritionPred(ref double food) 
         {
             if (Attack > h.Defense)
             {
@@ -41,27 +41,8 @@ namespace Animal_world
                 }
             }
 
-        }
-
-        public void Repoduce(ref double[] array)
-        {
-            if (Satiety > 150 && HitPoints > 150)
-            {
-                array.Add();
-            }
-
-        }
-
-        public void delHarbivore(ref double[] array)
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (HitPoints == 0)
-                {
-                    array.Remove();
-                }
-            }
         }*/
+
         public override void Display()
         {
             Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Attack={Attack}");
