@@ -12,6 +12,7 @@ namespace Animal_world
     {
         Random rnd = new Random();
         Harbivore h = new Harbivore();
+
         static double satiety = 10;
         public double HitPoints { get; set; }
         public double Satiety { get; set; }
@@ -19,12 +20,14 @@ namespace Animal_world
         public Predator() : base()
         {
         }
-        public Predator(string name, double attack) : base()
+        public Predator(string name, double attack, double hp, double satiety) : base()
         {
             this.Attack = attack;
+            this.HitPoints = hp;
+            this.Satiety = satiety;
         }
 
-       /* public double nutritionPred(ref double food) 
+        public double nutritionPred(ref double food) 
         {
             if (Attack > h.Defense)
             {
@@ -41,16 +44,12 @@ namespace Animal_world
                 }
             }
 
-        }*/
+        }
 
         public override void Display()
         {
             Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Attack={Attack}");
         }
 
-        public override void Remove(object obj)
-        {
-            throw new NotImplementedException();
-        }
-    }
+     
 }

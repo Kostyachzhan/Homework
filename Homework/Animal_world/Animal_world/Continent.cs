@@ -12,9 +12,7 @@ namespace Animal_world
         public string Name { get; set; }
         public double Food { get; set; }
 
-        public Continent()
-        {
-        }
+        public Continent(){}
 
         public Continent(string continentName, int food)
         {

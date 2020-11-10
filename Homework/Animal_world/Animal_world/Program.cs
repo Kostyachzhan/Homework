@@ -57,18 +57,14 @@ namespace Animal_world
             List<Harbivore> h1= new List<Harbivore>();
             List<Predator> p1 = new List<Predator>();
 
-            List<Continent> c2 = new List<Continent>();
-            List<Harbivore> h2 = new List<Harbivore>();
-            List<Predator> p2 = new List<Predator>();
-
-            /*с1.Add(new Continent() { Name="Europe", Food=100 });
-            с2.Add(new Continent() { Name = "Africa", Food = 80 });*/
+            с1.Add(new Continent() { Name = "Europe", Food = 100 });
+            ///с2.Add(new Continent() { Name = "Africa", Food = 80 });
 
             h1.Add(new Harbivore() { Name = "Rabbit", Species = "white", HitPoints=80, Defense=10, Satiety=15 });
-            h2.Add(new Harbivore() { Name = "Deer", Species = "big", HitPoints = 150, Defense = 20, Satiety = 5 });
+            h1.Add(new Harbivore() { Name = "Deer", Species = "big", HitPoints = 150, Defense = 20, Satiety = 5 });
 
             p1.Add(new Predator() { Name = "Wolf", Species = "black", HitPoints = 130, Attack = 70, Satiety = 10 });
-            p2.Add(new Predator() { Name = "Lion", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 15 });
+            p1.Add(new Predator() { Name = "Lion", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 15 });
 
 
             foreach (Harbivore h in h1)

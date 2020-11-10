@@ -11,6 +11,7 @@ namespace Animal_world
     {
         Random rnd = new Random();
         Continent c = new Continent();
+
         static double satiety=10;
         public double HitPoints { get; set; }
         public double Satiety { get; set; }
@@ -40,9 +41,6 @@ namespace Animal_world
             Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Defense={Defense}" );
         }
 
-        public override void Remove(object obj)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

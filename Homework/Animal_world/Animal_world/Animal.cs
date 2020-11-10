@@ -16,7 +16,7 @@ namespace Animal_world
             this.Name = animalName;
             this.Species = species;
         }
-        public abstract void Remove(object obj);
+
         public abstract void Display();
 
 
