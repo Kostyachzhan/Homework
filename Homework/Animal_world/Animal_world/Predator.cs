@@ -25,46 +25,27 @@ namespace Animal_world
             this.Satiety = satiety;
         }
 
-        public void nutritionPred(Harbivore h)
-        {
-            if (Attack > h.Defense)
-            {
-                h.HitPoints = 0;
-                Satiety += rnd.Next(0, 5);
-            }
-            else
-            {
-                Satiety -= rnd.Next(0, 5);
-                if (Satiety < 1)
-                {
-                    HitPoints -= rnd.Next(0, 5);
-                    Attack -= rnd.Next(0, 5);
-                }
-            }
-
-        }
-
         public override void Display()
         {
             Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Attack={Attack}");
         }
 
-        internal void nutritionPred(List<Harbivore> herbivores)
+        public void nutritionPred(List<Harbivore> herbivores)
         {
             foreach (Harbivore h in herbivores)
             {
                 if (Attack > h.Defense)
                 {
                     h.HitPoints = 0;
-                    Satiety += rnd.Next(0, 5);
+                    Satiety += rnd.Next(1, 5);
                 }
                 else
                 {
-                    Satiety -= rnd.Next(0, 5);
+                    Satiety -= rnd.Next(1, 5);
                     if (Satiety < 1)
                     {
-                        HitPoints -= rnd.Next(0, 5);
-                        Attack -= rnd.Next(0, 5);
+                        HitPoints -= rnd.Next(1, 7);
+                        Attack -= rnd.Next(1, 7);
                     }
                 }
             }

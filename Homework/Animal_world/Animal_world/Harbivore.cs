@@ -32,8 +32,8 @@ namespace Animal_world
             food -= t;
             if (Satiety < 1)
             {
-                HitPoints -= rnd.Next(0, 3);
-                Defense -= rnd.Next(0, 5);
+                HitPoints -= rnd.Next(1, 10);
+                Defense -= rnd.Next(1, 10);
             }
         }
 

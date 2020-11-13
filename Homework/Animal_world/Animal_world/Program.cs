@@ -32,8 +32,8 @@ namespace Animal_world
             c1.Add(new Continent() { Name = "Europe" });
             c1[0].Herbivores.Add(new Harbivore() { Name = "Rabbit", Species = "white", HitPoints = 190, Defense = 100, Satiety = 170 });
             c1[0].Herbivores.Add(new Harbivore() { Name = "Deer", Species = "big", HitPoints = 150, Defense = 20, Satiety = 5 });
-            c1[0].Predators.Add(new Predator() { Name = "Wolf", Species = "black", HitPoints = 130, Attack = 70, Satiety = 10 });
-            c1[0].Predators.Add(new Predator() { Name = "Bear", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 15 });
+            c1[0].Predators.Add(new Predator() { Name = "Wolf", Species = "black", HitPoints = 130, Attack = 70, Satiety = -10 });
+            c1[0].Predators.Add(new Predator() { Name = "Bear", Species = "wh", HitPoints = 170, Attack = 100, Satiety = -10 });
 
             c1[0].Fedding();
             Console.WriteLine($"\n");
@@ -47,8 +47,8 @@ namespace Animal_world
 
             List<Continent> c2 = new List<Continent>();
             c2.Add(new Continent() { Name = "Africa", Food = 80 });
-            c2[0].Herbivores.Add(new Harbivore() { Name = "Elephant", Species = "white", HitPoints = 120, Defense = 100, Satiety = 50 });
-            c2[0].Herbivores.Add(new Harbivore() { Name = "Giraffe", Species = "big", HitPoints = 150, Defense = 50, Satiety = 70 });
+            c2[0].Herbivores.Add(new Harbivore() { Name = "Elephant", Species = "white", HitPoints = 120, Defense = 100, Satiety = -10 });
+            c2[0].Herbivores.Add(new Harbivore() { Name = "Giraffe", Species = "big", HitPoints = 150, Defense = 50, Satiety = -10 });
             c2[0].Predators.Add(new Predator() { Name = "Lion", Species = "black", HitPoints = 160, Attack = 70, Satiety = 60 });
             c2[0].Predators.Add(new Predator() { Name = "Cheetah", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 180 });
 
