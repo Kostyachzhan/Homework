@@ -10,11 +10,9 @@ namespace Animal_world
     class Harbivore : Animal
     {
         Random rnd = new Random();
-        Continent c = new Continent();
 
-        static double satiety=10;
         public double HitPoints { get; set; }
-        public double Satiety { get; set; }
+        public double Satiety { get; set; } = 10;
         public double Defense { get; set; }
         public Harbivore() : base()
         {
@@ -26,10 +24,13 @@ namespace Animal_world
             this.Satiety = satiety;
         }
 
-        public double nutritionHerb(ref double food ) 
+        public void nutritionHerb(double food)
         {
-            satiety += food;
-            if (satiety < 1)
+            var t = 0;
+            t += rnd.Next(0, 5);
+            Satiety += t;
+            food -= t;
+            if (Satiety < 1)
             {
                 HitPoints -= rnd.Next(0, 3);
                 Defense -= rnd.Next(0, 5);
@@ -38,9 +39,8 @@ namespace Animal_world
 
         public override void Display()
         {
-            Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Defense={Defense}" );
+            Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Defense={Defense}");
         }
 
-       
     }
 }

@@ -27,55 +27,37 @@ namespace Animal_world
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            /*Continent c1 = new Continent("Europe",100);
-            c1.Display();
-
-            Harbivore h1 = new Harbivore();
-            h1.Name = "Rabbit";
-            h1.Species = "White";
-            h1.HitPoints = 100;
-            ///h1.Satiety = 100;
-            h1.Defense = 20;
-            ///h1.Display();
-
-
-            Predator p1 = new Predator();
-            p1.Name = "Lion";
-            p1.Species = "Big";
-            p1.HitPoints = 70;
-            p1.Satiety = 60;
-            p1.Attack = 80;
-            ///p1.Display();
-
-
-
-            ///h1.Nutrition();
-            h1.Display();
-            p1.Display();*/
 
             List<Continent> c1 = new List<Continent>();
-            List<Harbivore> h1= new List<Harbivore>();
-            List<Predator> p1 = new List<Predator>();
+            c1.Add(new Continent() { Name = "Europe" });
+            c1[0].Herbivores.Add(new Harbivore() { Name = "Rabbit", Species = "white", HitPoints = 190, Defense = 100, Satiety = 170 });
+            c1[0].Herbivores.Add(new Harbivore() { Name = "Deer", Species = "big", HitPoints = 150, Defense = 20, Satiety = 5 });
+            c1[0].Predators.Add(new Predator() { Name = "Wolf", Species = "black", HitPoints = 130, Attack = 70, Satiety = 10 });
+            c1[0].Predators.Add(new Predator() { Name = "Bear", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 15 });
 
-            с1.Add(new Continent() { Name = "Europe", Food = 100 });
-            ///с2.Add(new Continent() { Name = "Africa", Food = 80 });
+            c1[0].Fedding();
+            Console.WriteLine($"\n");
+            c1[0].Display();
+            Console.WriteLine($"________________________________________________________\n");
+            c1[0].ShowAnimals();
 
-            h1.Add(new Harbivore() { Name = "Rabbit", Species = "white", HitPoints=80, Defense=10, Satiety=15 });
-            h1.Add(new Harbivore() { Name = "Deer", Species = "big", HitPoints = 150, Defense = 20, Satiety = 5 });
+            Console.WriteLine("\n");
+            Console.WriteLine("------------------------------------------------------------------------------------------------------\n");
+            Console.WriteLine("\n");
 
-            p1.Add(new Predator() { Name = "Wolf", Species = "black", HitPoints = 130, Attack = 70, Satiety = 10 });
-            p1.Add(new Predator() { Name = "Lion", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 15 });
+            List<Continent> c2 = new List<Continent>();
+            c2.Add(new Continent() { Name = "Africa", Food = 80 });
+            c2[0].Herbivores.Add(new Harbivore() { Name = "Elephant", Species = "white", HitPoints = 120, Defense = 100, Satiety = 50 });
+            c2[0].Herbivores.Add(new Harbivore() { Name = "Giraffe", Species = "big", HitPoints = 150, Defense = 50, Satiety = 70 });
+            c2[0].Predators.Add(new Predator() { Name = "Lion", Species = "black", HitPoints = 160, Attack = 70, Satiety = 60 });
+            c2[0].Predators.Add(new Predator() { Name = "Cheetah", Species = "wh", HitPoints = 170, Attack = 100, Satiety = 180 });
 
+            c2[0].Fedding();
+            Console.WriteLine($"\n");
+            c2[0].Display();
+            Console.WriteLine($"________________________________________________________\n");
+            c2[0].ShowAnimals();
 
-            foreach (Harbivore h in h1)
-            {
-                Console.WriteLine(h.Name);
-            }
-
-            foreach (Predator p in p1)
-            {
-                Console.WriteLine(p.Name);
-            }
             Console.ReadLine();
         }
     }

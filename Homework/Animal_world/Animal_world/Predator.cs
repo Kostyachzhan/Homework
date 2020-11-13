@@ -11,11 +11,9 @@ namespace Animal_world
     class Predator : Animal
     {
         Random rnd = new Random();
-        Harbivore h = new Harbivore();
 
-        static double satiety = 10;
         public double HitPoints { get; set; }
-        public double Satiety { get; set; }
+        public double Satiety { get; set; } = 10;
         public double Attack { get; set; }
         public Predator() : base()
         {
@@ -27,17 +25,17 @@ namespace Animal_world
             this.Satiety = satiety;
         }
 
-        public double nutritionPred(ref double food) 
+        public void nutritionPred(Harbivore h)
         {
             if (Attack > h.Defense)
             {
                 h.HitPoints = 0;
-                satiety += rnd.Next(0, 5);
+                Satiety += rnd.Next(0, 5);
             }
             else
             {
-                satiety -= rnd.Next(0, 5);
-                if (satiety < 1)
+                Satiety -= rnd.Next(0, 5);
+                if (Satiety < 1)
                 {
                     HitPoints -= rnd.Next(0, 5);
                     Attack -= rnd.Next(0, 5);
@@ -51,5 +49,25 @@ namespace Animal_world
             Console.WriteLine($"Name={Name}: Species={Species}: Satiety={Satiety}: HP={HitPoints}: Attack={Attack}");
         }
 
-     
+        internal void nutritionPred(List<Harbivore> herbivores)
+        {
+            foreach (Harbivore h in herbivores)
+            {
+                if (Attack > h.Defense)
+                {
+                    h.HitPoints = 0;
+                    Satiety += rnd.Next(0, 5);
+                }
+                else
+                {
+                    Satiety -= rnd.Next(0, 5);
+                    if (Satiety < 1)
+                    {
+                        HitPoints -= rnd.Next(0, 5);
+                        Attack -= rnd.Next(0, 5);
+                    }
+                }
+            }
+        }
+    }
 }
